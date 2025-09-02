@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffe6f0, #fff0f6);
+  color: #444;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+/* Menu simples */
+nav {
+  background: #b83280;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffe6f0;
+}
+
+/* Estrutura da seção */
+.section {
+  margin: 50px auto;
+  max-width: 900px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #a61e4d;
+  margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Formulário */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato label {
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #a61e4d;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  outline: none;
+  border-color: #b83280;
+}
+
+/* Botão */
+.form-contato button {
+  margin-top: 20px;
+  padding: 14px;
+  background: #b83280;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form-contato button:hover {
+  background: #a61e4d;
+  transform: scale(1.03);
+}
